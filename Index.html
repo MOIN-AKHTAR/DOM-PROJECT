@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Index.css">
+    <title>Favorite Movies</title>
+    <script src="./Index.js" defer></script>
+</head>
+<body>
+    <div class="backdrop"></div>
+    <header>
+        <h2>favorite movies</h2>
+        <button id="add_movie_btn">add movie</button>
+    </header>
+    <section class="card modal" id="add_movie">
+     <div class="modal_content">
+        <label for="title">Movie Title</label>
+        <input type="text"  id="title">
+        <label for="rating">Your Rating</label>
+        <input 
+        type="number"
+        min="1"
+        max="5" 
+        id="rating"
+        >
+     </div>
+     <div class="modal_action">
+         <button class="add_modal_cancelBtn">Cancel</button>
+         <button class="add_modal_addBtn">Add</button>
+     </div>
+    </section>
+    <div class="modal card" id="delete-modal">
+        <h2 class="modal__title">Are you sure?</h2>
+        <p class="modal_content">
+          Are you sure you want to delete this item? This action can't be made
+          undone!
+        </p>
+        <div class="modal_action">
+          <button class="delete_modal_cancelBtn">No (Cancel)</button>
+          <button class="delete_model_yesBtn">Yes</button>
+        </div>
+      </div>
+    <main>
+        <section id="entry-text" class="card">
+          <p>Your personal movie database!</p>
+        </section>
+        <ul class="movie_List">
+
+        </ul>
+    </main>
+    <script>
+        
+    </script>
+</body>
+</html>
